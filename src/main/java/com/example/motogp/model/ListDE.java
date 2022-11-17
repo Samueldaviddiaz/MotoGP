@@ -66,21 +66,4 @@ public class ListDE {
         }
         return count;
     }
-
-    /// #4. Adelantar
-    public void forward(int count){
-        if (head != null){
-            Bike temp1 = head.getData();
-            NodeDE temp = head;
-            while (temp.getNext() != null){
-                temp = temp.getNext();}
-            head.setData(temp.getData());
-            temp.setData(temp1);
-        }
-    }
-
-    /// #5. Crear datos motocicleta
-    public void createInformation(){
-
-    }
 }
